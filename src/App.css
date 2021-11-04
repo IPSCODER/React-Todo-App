@@ -15,9 +15,10 @@
 .center_div h1{
   background-color: tomato;
   text-align: center;
+  box-shadow: 0 0 15px;
 }
 input{
-  margin-left: 50px;  
+  /* margin-left: 50px;   */
   text-align: center;
   height: 30px;
   border: none;
@@ -29,7 +30,7 @@ input{
   border-radius: 50%;
   background-color: teal;
   padding: 5px;
-  margin-left: 30px;
+  margin-left: 10px;
   width: 40px;
   font-size: 20px;
 }
@@ -40,6 +41,8 @@ input{
 .center_div ol li{
   margin-left: 30px;
   list-style: none;
+  padding: 5px 0;
+
 }
 .todo_style{
   display: flex;
@@ -65,4 +68,97 @@ input{
 }
 .todo_style .fa-times:hover .list_style{
   color: crimson;
+}
+
+@media (max-width:1000px){
+  .main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cyan;
+  }
+  .center_div{
+    width: 700px;
+    box-shadow: 0 0 15px;
+    height: 70vh;
+    border-radius: 10px;
+    background-color: rgb(235, 212, 212);
+  }
+  .center_div h1{
+    background-color: tomato;
+    text-align: center;
+    box-shadow: 0 0 15px;
+  }
+  input{
+    /* margin-left: 50px;   */
+    text-align: center;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid tomato;
+    border-radius: 5px;
+    background-color: rgb(235, 212, 212);
+  }
+  .center_div button{
+    border-radius: 50%;
+    background-color: teal;
+    padding: 5px;
+    margin-left: 5px;
+    width: 40px;
+    font-size: 20px;
+  }
+  .center_div button:hover{
+    background-color: green;
+    color: aliceblue;
+  }
+  .center_div ol li{
+    margin-left: 30px;
+    list-style: none;
+  }
+}
+@media (max-width:900px){
+  .main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cyan;
+  }
+  .center_div{
+    width: 300px;
+    box-shadow: 0 0 15px;
+    height: 70vh;
+    border-radius: 10px;
+    background-color: rgb(235, 212, 212);
+  }
+  .center_div h1{
+    background-color: tomato;
+    text-align: center;
+    box-shadow: 0 0 15px;
+  }
+  input{
+    /* margin-left: 50px;   */
+    text-align: center;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid tomato;
+    border-radius: 5px;
+    background-color: rgb(235, 212, 212);
+  }
+  .center_div button{
+    border-radius: 50%;
+    background-color: teal;
+    padding: 5px;
+    margin-left: 5px;
+    width: 40px;
+    font-size: 20px;
+  }
+  .center_div button:hover{
+    background-color: green;
+    color: aliceblue;
+  }
+  .center_div ol li{
+    margin-left: 30px;
+    list-style: none;
+  }
 }

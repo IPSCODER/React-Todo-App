@@ -32,13 +32,14 @@ const App = () => {
         <div className="center_div">
           <h1> ToDo List </h1>
           <br />
+          <center>
           <input
             type="text"
             placeholder="Add a Item"
             onChange={itemEvent}
             value={inputList}
           />
-          <button onClick={submitItem}>+</button>
+          <button onClick={submitItem}>+</button></center>
           <ol type="I">
             {Items.map((itema, index) => {
               return <ToDoList key={index} id={index} onSelect={deleteItem} text={itema} />;
